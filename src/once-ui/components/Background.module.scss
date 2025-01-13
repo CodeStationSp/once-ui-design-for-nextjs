@@ -1,27 +1,32 @@
+// Variáveis
+$primary-color: #acdc08;
+$transparent: transparent;
+
+// Estilos
 .mask {
   mask-size: 100% 100%;
   mask-image: radial-gradient(
-    var(--mask-radius) at var(--mask-position-x) var(--mask-position-y),
-    black 0%,
-    transparent 100%
+    50% at 50% 50%,
+    $primary-color 0%,
+    $transparent 100%
   );
 }
 
 .gradient {
   background: radial-gradient(
-        ellipse var(--gradient-width) var(--gradient-height) at var(--gradient-position-x) var(--gradient-position-y),
-        var(--gradient-color-start),
-        var(--gradient-color-end)
+        ellipse 50% 50% at 50% 50%,
+        $primary-color,
+        $primary-color
       );
   width: 400%;
   height: 400%;
   left: -150%;
   top: -150%;
-  transform: rotate(var(--gradient-tilt));
+  transform: rotate(0deg);
   transform-origin: center;
 }
 
 .dots {
-  background-image: radial-gradient(var(--dots-color) 1px, var(--static-transparent) 1px);
-  background-size: var(--dots-size) var(--dots-size);
+  background-image: radial-gradient($primary-color 1px, $transparent 1px);
+  background-size: 10px 10px;
 }
