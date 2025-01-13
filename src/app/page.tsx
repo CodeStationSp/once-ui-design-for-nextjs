@@ -228,16 +228,15 @@ export default function Home() {
             }}
           />
           <Column fillWidth alignItems="center" gap="32" padding="32" position="relative">
-            <InlineCode radius="xl" shadow="m" fit paddingX="16" paddingY="8">
-              Start by editing
-              <Text onBackground="brand-medium" marginLeft="8">
-                app/page.tsx
-              </Text>
-            </InlineCode>
+            
             <Heading wrap="balance" variant="display-default-l" align="center" marginBottom="16">
 
               <Image alt='teste' src={'/images/LOGO-CODESTATION.png'} width={500} height={500}/>
             </Heading>
+            <InlineCode radius="xl" shadow="m" fit paddingX="16" paddingY="8">
+              Construindo seus Sonhos
+        
+            </InlineCode>
             <Button
               id="readDocs"
               target="_blank"
