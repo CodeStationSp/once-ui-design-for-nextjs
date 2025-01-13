@@ -1,5 +1,6 @@
 // Variáveis
 $primary-color: #082c33;
+$secondy-color: #000000;
 $transparent: transparent;
 
 // Estilos
@@ -16,7 +17,7 @@ $transparent: transparent;
   background: radial-gradient(
         ellipse 50% 50% at 50% 50%,
         $primary-color,
-        $primary-color
+        $secondy-color
       );
   width: 400%;
   height: 400%;

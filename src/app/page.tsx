@@ -122,7 +122,6 @@ export default function Home() {
           paddingLeft="32"
           paddingY="20"
         >
-          {/* <Logo size="m" icon={false} href="https://once-ui.com" /> */}
 
           <Image alt='teste' src={'/images/LOGO-CODESTATION.png'} width={100} height={100}/>
           <Row gap="12" hide="s">
@@ -231,16 +230,19 @@ export default function Home() {
             
             <Heading wrap="balance" variant="display-default-l" align="center" marginBottom="16">
 
-              <Image alt='teste' src={'/images/LOGO-CODESTATION.png'} width={500} height={500}/>
+              <Image alt='teste' src={'/images/LOGO-CODESTATION.png'} width={500} height={500}  style={{
+    border: "2px solid #000", // Contorno preto
+    borderRadius: "50%", // Contorno arredondado (opcional)
+  }}/>
             </Heading>
-            <InlineCode radius="xl" shadow="m" fit paddingX="16" paddingY="8">
-              Construindo seus Sonhos
+            <InlineCode radius="xl"shadow="m" fit paddingX="16" paddingY="8">
+              Construindo suas ideias!
         
             </InlineCode>
             <Button
               id="readDocs"
               target="_blank"
-              label="Open docs"
+              label="Abrir Portifólio"
               href="https://once-ui.com/docs"
               variant="secondary"
               arrowIcon
